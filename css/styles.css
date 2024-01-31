@@ -1,0 +1,26 @@
+body {
+  background-color: #6b7a8f;
+  color: #503a1c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+  background-color: #dcc7aa;
+  margin: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+h2,
+h4 {
+  background-color: #f19142;
+  padding: 10px;
+}
+
+h3 {
+  background-color: #f7c331;
+  max-width: 200px;
+}
+button {
+  background-color: #afa6c3;
+  padding: 5px 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
