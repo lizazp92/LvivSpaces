@@ -33,24 +33,20 @@
     <main id="page-content">
       <section id="about">
         <h2>About us</h2>
-        <section>
-          <p>
-            LvivSpaces is a
-            <strong>full-scale innovative coworking space</strong> in Lviv,
-            created by a creative team of professionals in
-            <time datetime="2024">2024</time>. Our team is represented by
-            talented creators with non-standard thinking, who strive to turn
-            your workspace into a cozy and comfortable environment.
-          </p>
-        </section>
-        <section>
-          <p>
-            LvivSpaces offers you <em>high-class working conditions</em> that
-            meet all global trends in creating a high-quality business
-            environment. Our co-working space will change your perception of
-            what renting an office in Lviv is like.
-          </p>
-        </section>
+        <p>
+          LvivSpaces is a
+          <strong>full-scale innovative coworking space</strong> in Lviv,
+          created by a creative team of professionals in
+          <time datetime="2024">2024</time>. Our team is represented by talented
+          creators with non-standard thinking, who strive to turn your workspace
+          into a cozy and comfortable environment.
+        </p>
+        <p>
+          LvivSpaces offers you <em>high-class working conditions</em> that meet
+          all global trends in creating a high-quality business environment. Our
+          co-working space will change your perception of what renting an office
+          in Lviv is like.
+        </p>
       </section>
       <section id="choose-book">
         <h2>Choose the best option for your needs:</h2>
@@ -132,10 +128,14 @@
         </ul>
       </section>
       <section id="gallery">
-        <h2>Photos of LvivSpaces</h2>
+        <h2>LvivSpaces gallery</h2>
         <img src="./images/open-space.jpg" alt="Open_space" />
         <img src="./images/private-office.jpg" alt="Private_office" />
         <img src="./images/meeting-room.jpg" alt="Meeting_room" />
+        <video width="640" height="495" controls>
+          <source src="./video/coworking-video.mp4" type="video/mp4" />
+          Your browser does not support it
+        </video>
       </section>
       <section>
         <h2>Location and contacts</h2>
@@ -177,9 +177,14 @@
               <br />
               <input type="email" id="email" name="email" required />
               <br />
-              <label for="question">Your Question:</label>
+              <label for="your-question">Your Question:</label>
               <br />
-              <input type="question" id="question" name="question" />
+              <textarea
+                name="question"
+                id="questionarea"
+                cols="55"
+                rows="10"
+              ></textarea>
               <br />
               <br />
               <button type="submit">Submit</button>
@@ -205,13 +210,13 @@
             </thead>
             <tbody>
               <tr>
-                <td>7:00-22:00</td>
-                <td>7:00-22:00</td>
-                <td>7:00-22:00</td>
-                <td>7:00-22:00</td>
-                <td>7:00-22:00</td>
-                <td>7:00-22:00</td>
-                <td>7:00-22:00</td>
+                <td>7:00-23:00</td>
+                <td>7:00-23:00</td>
+                <td>7:00-23:00</td>
+                <td>7:00-23:00</td>
+                <td>7:00-23:00</td>
+                <td>7:00-23:00</td>
+                <td>7:00-23:00</td>
               </tr>
             </tbody>
           </table>
@@ -219,14 +224,14 @@
       </section>
       <aside id="aside">
         <h4>Reviews</h4>
-        <blockquote cite="google.com">
+        <blockquote cite="https://www.google.com/">
           "I was completely impressed with their professionalism and customer
           service."
         </blockquote>
-        <blockquote cite="google.com">
+        <blockquote cite="https://www.google.com/">
           "This is my go-to place for coworking - the best in town."
         </blockquote>
-        <blockquote cite="google.com">
+        <blockquote cite="https://www.google.com/">
           "Pricing is fair and transparent - definitely value for money."
         </blockquote>
       </aside>
@@ -234,12 +239,17 @@
     <footer id="page-footer">
       <section id="footer">
         <small
-          ><p><a href="">Privacy Policy</a></p>
-          <p><a href="">Public Offer Agreement</a></p>
-          <p><a href="">Terms of service</a></p>
-          <p>Last updated on 01.02.2024</p></small
-        >
+          ><a href="">Privacy Policy</a>
+          <br />
+          <a href="">Public Offer Agreement</a>
+          <br />
+          <a href="">Terms of service</a>
+          <br />
+        </small>
+        <br />
         <span>LvivSpaces © 2024</span>
+        <br />
+        <small><span>Last updated on 01.02.2024</span></small>
       </section>
     </footer>
   </body>

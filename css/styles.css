@@ -18,6 +18,9 @@ h4 {
   background-color: #f19142;
   padding: 10px;
 }
+p {
+  margin: 20px;
+}
 summary {
   background-color: #f7c331;
   max-width: 200px;
