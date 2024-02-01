@@ -14,94 +14,116 @@
     <script src="./js/script.js" type="text/javascript"></script>
   </head>
   <body>
-    <header>
+    <header id="page-header">
       <h1>Coworking space in Lviv</h1>
+      <figure>
+        <img src="./images/header-photo.jpg" alt="coworking-space" />
+        <figcaption>Coworking space in the centre of Lviv</figcaption>
+      </figure>
     </header>
-    <nav>
+    <nav id="page-navigation">
       <ul>
-        <li><a href="">About us</a></li>
-        <li><a href="">Choose and book</a></li>
-        <li><a href="">Why us</a></li>
-        <li><a href="">Our gallery</a></li>
-        <li><a href="">Contacts</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#choose-book">Choose and book</a></li>
+        <li><a href="#why-us">Why us</a></li>
+        <li><a href="#gallery">Our gallery</a></li>
+        <li><a href="#contacts">Contacts</a></li>
       </ul>
     </nav>
-    <main>
-      <section>
+    <main id="page-content">
+      <section id="about">
         <h2>About us</h2>
         <section>
           <p>
-            LvivSpaces is a full-scale innovative coworking space in Lviv,
-            created by a creative team of professionals. Our team is represented
-            by talented creators with non-standard thinking, who strive to turn
+            LvivSpaces is a
+            <strong>full-scale innovative coworking space</strong> in Lviv,
+            created by a creative team of professionals in
+            <time datetime="2024">2024</time>. Our team is represented by
+            talented creators with non-standard thinking, who strive to turn
             your workspace into a cozy and comfortable environment.
           </p>
         </section>
         <section>
           <p>
-            LvivSpaces offers you high-class working conditions that meet all
-            global trends in creating a high-quality business environment. Our
-            co-working space will change your perception of what renting an
-            office in Lviv is like.
+            LvivSpaces offers you <em>high-class working conditions</em> that
+            meet all global trends in creating a high-quality business
+            environment. Our co-working space will change your perception of
+            what renting an office in Lviv is like.
           </p>
         </section>
       </section>
-      <section>
+      <section id="choose-book">
         <h2>Choose the best option for your needs:</h2>
-        <section>
-          <h3>Day Pass</h3>
-          <p>
-            For those who need a flexible and comfortable workspace for one day
-            without long-term contracts.
-          </p>
-          <button>Book</button>
+        <section id="day-pass">
+          <details>
+            <summary>Day Pass</summary>
+            <p>
+              For those who need a flexible and comfortable workspace
+              <strong>for one day</strong>
+              without long-term contracts.
+            </p>
+            <button>Book</button>
+          </details>
         </section>
-        <section>
-          <h3>Open-space</h3>
-          <p>
-            For those who prefer to work in an open space, in a circle of
-            like-minded people and colleagues. Your fixed workplace 24/7.
-          </p>
-          <button>Book</button>
+
+        <section id="open-space">
+          <details>
+            <summary>Open-space</summary>
+            <p>
+              For those who prefer to work in an <strong>open space</strong>, in
+              a circle of like-minded people and colleagues. Your fixed
+              workplace 24/7.
+            </p>
+            <button>Book</button>
+          </details>
         </section>
-        <section>
-          <h3>Private Office</h3>
-          <p>
-            For those who want their own space. Private offices-transformers for
-            maximum comfort and concentration on teamwork.
-          </p>
-          <button>Book</button>
+
+        <section id="private-office">
+          <details>
+            <summary>Private Office</summary>
+            <p>
+              For those who want their own space.
+              <strong>Private offices-transformers</strong> for maximum comfort
+              and concentration on teamwork.
+            </p>
+            <button>Book</button>
+          </details>
         </section>
-        <section>
-          <h3>Meeting rooms</h3>
-          <p>
-            For fans of endless negotiations: meeting rooms are equipped with
-            everything necessary for negotiations and meetings: screen,
-            chromecast, webCamera, flipcharts/marker walls,
-            pens/pencils/markers, stickers.
-          </p>
-          <button>Book</button>
+
+        <section id="meeting-rooms">
+          <details>
+            <summary>Meeting rooms</summary>
+            <p>
+              For fans of endless negotiations:
+              <strong>meeting rooms</strong> are equipped with everything
+              necessary for negotiations and meetings: screen, chromecast,
+              webCamera, flipcharts/marker walls, pens/pencils/markers,
+              stickers.
+            </p>
+            <button>Book</button>
+          </details>
         </section>
       </section>
-      <section>
+      <section id="why-us">
         <h2>Advantages of working in our coworking space</h2>
         <ul>
           <li>
-            Convenient location: 7 minutes from the historical center of Lviv;
+            Convenient location: 7 minutes from
+            <strong>the historical center</strong> of Lviv;
           </li>
           <li>Opening hours: 7:00 a.m. - 11:00 p.m. (daily);</li>
           <li>High-speed Internet (WiFi or Ethernet connection);</li>
-          <li>Starlink terminals and powerful generators;</li>
+          <li><em>Starlink terminals</em> and powerful generators;</li>
           <li>Printing areas;</li>
           <li>Parking for bicycle and scooters;</li>
-          <li>Unlimited coffee, tea and cookies;</li>
+          <li><em>Unlimited</em> coffee, tea and cookies;</li>
           <li>A large selection of restaurants near the location.</li>
         </ul>
         <h2>Fixed workplace offers</h2>
         <ul>
           <li>24/7 access;</li>
           <li>High-speed Internet (WiFi or Ethernet connection);</li>
-          <li>Starlink terminals and powerful generators;</li>
+          <li><em>Starlink terminals</em> and powerful generators;</li>
           <li>Office equipment (printer, scanner, 3d printer);</li>
           <li>25m<sup>2</sup> meeting rooms;</li>
           <li>Child-care room;</li>
@@ -109,41 +131,69 @@
           <li>Parking for bicycles and scooters;</li>
         </ul>
       </section>
-      <section>
+      <section id="gallery">
         <h2>Photos of LvivSpaces</h2>
         <img src="./images/open-space.jpg" alt="Open_space" />
         <img src="./images/private-office.jpg" alt="Private_office" />
         <img src="./images/meeting-room.jpg" alt="Meeting_room" />
       </section>
       <section>
-        <h2>Location:</h2>
+        <h2>Location and contacts</h2>
+        <section id="address">
+          <address>
+            <p>Yaponska St. 16, Lviv</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.453825482611!2d24.0065665754019!3d49.83392973156411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7932656edf%3A0x28906a9d6740804!2z0YPQuy4g0K_Qv9C-0L3RgdC60LDRjywgMTYsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1706460952934!5m2!1sru!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </address>
+        </section>
+        <section id="contacts">
+          <h4>Contact us:</h4>
+          <address>
+            <ul>
+              <li>
+                <a href="mailto:example@gmail.com">E-mail: example@gmail.com</a>
+              </li>
+              <li><a href="tel:+380111111111">Phone: 111111111</a></li>
+            </ul>
+          </address>
+        </section>
         <section>
-          <p>Yaponska St. 16, Lviv</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.453825482611!2d24.0065665754019!3d49.83392973156411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7932656edf%3A0x28906a9d6740804!2z0YPQuy4g0K_Qv9C-0L3RgdC60LDRjywgMTYsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1706460952934!5m2!1sru!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          <fieldset>
+            <legend><h4>Leave us a message</h4></legend>
+            <form action="/submit" method="post">
+              <label for="name">Name:</label>
+              <br />
+              <input type="text" id="name" name="name" required />
+              <br />
+              <label for="email">Email:</label>
+              <br />
+              <input type="email" id="email" name="email" required />
+              <br />
+              <label for="question">Your Question:</label>
+              <br />
+              <input type="question" id="question" name="question" />
+              <br />
+              <br />
+              <button type="submit">Submit</button>
+            </form>
+          </fieldset>
         </section>
       </section>
-      <section>
-        <h4>Contact us:</h4>
-        <ul>
-          <li>E-mail: example@gmail.com</li>
-          <li>Phone: 111111111</li>
-        </ul>
-      </section>
+
       <section>
         <h4>Working hours</h4>
         <section>
           <table border="1">
             <thead>
-              <tr bgcolor="lightblue">
+              <tr bgcolor="#6b7a8f">
                 <th>Monday</th>
                 <th>Tuesday</th>
                 <th>Wednesday</th>
@@ -167,12 +217,28 @@
           </table>
         </section>
       </section>
+      <aside id="aside">
+        <h4>Reviews</h4>
+        <blockquote cite="google.com">
+          "I was completely impressed with their professionalism and customer
+          service."
+        </blockquote>
+        <blockquote cite="google.com">
+          "This is my go-to place for coworking - the best in town."
+        </blockquote>
+        <blockquote cite="google.com">
+          "Pricing is fair and transparent - definitely value for money."
+        </blockquote>
+      </aside>
     </main>
-    <footer>
+    <footer id="page-footer">
       <section id="footer">
-        <p><a href="">Privacy Policy</a></p>
-        <p><a href="">Public Offer Agreement</a></p>
-        <p><a href="">Terms of service</a></p>
+        <small
+          ><p><a href="">Privacy Policy</a></p>
+          <p><a href="">Public Offer Agreement</a></p>
+          <p><a href="">Terms of service</a></p>
+          <p>Last updated on 01.02.2024</p></small
+        >
         <span>LvivSpaces © 2024</span>
       </section>
     </footer>

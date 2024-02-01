@@ -1,31 +1,56 @@
 body {
   background-color: #6b7a8f;
-  color: #503a1c;
+  color: #3d2e18;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-section {
+section,
+aside {
   background-color: #dcc7aa;
   margin: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
 }
-
+h1 {
+  margin: 20px 0 20px 20px;
+}
 h2,
 h4 {
   background-color: #f19142;
   padding: 10px;
 }
-
-h3 {
+summary {
   background-color: #f7c331;
   max-width: 200px;
+  font-weight: bolder;
+  font-size: 18px;
 }
 button {
   background-color: #afa6c3;
   padding: 5px 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #261c0e;
 }
-
 #footer {
   padding: 10px 15px 25px;
+}
+a {
+  color: #1a1817;
+}
+a:hover {
+  color: white;
+}
+a:visited {
+  color: #261717;
+}
+
+#contacts {
+  max-width: 280px;
+}
+
+fieldset {
+  max-width: 400px;
+}
+input {
+  width: 400px;
 }
