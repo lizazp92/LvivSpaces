@@ -3,19 +3,83 @@ body {
   color: #3d2e18;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-section,
+/* Navigation bar */
+.main-nav {
+  display: inline-block;
+  background-color: rgb(165, 158, 149);
+  text-align: left;
+  margin: 0 10px;
+}
+
+.main-nav ul {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-nav form {
+  display: inline-block;
+  margin-right: 113px;
+}
+
+.main-nav input[type="text"] {
+  width: 200px;
+}
+
+.main-nav input[type="submit"] {
+  width: 65px;
+}
+
+.main-nav li {
+  display: inline-block;
+  background-color: #6b7a8f;
+  margin: 0 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.main-nav li:last-child {
+  margin-right: 100px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #3d2e18;
+  font-weight: bolder;
+}
+
+/* sections with choose-book options*/
+.options-inline-block {
+  display: inline-block;
+  margin: 7px;
+  width: 270px;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 49%;
+}
+.h2-fullcolour {
+  background-color: rgb(165, 158, 149);
+  padding: 10px;
+}
+.h2-width {
+  margin: auto;
+  width: 95%;
+  text-align: center;
+}
+.section-size,
 aside {
   background-color: #dcc7aa;
-  margin: 10px;
+  margin: 30px 10px;
   padding-left: 10px;
   padding-bottom: 5px;
 }
+
 h1 {
   margin: 20px 0 20px 20px;
 }
-h2,
-section h4,
-aside h4 {
+.gradient-yb,
+.h2-gradient {
   background: linear-gradient(
     90deg,
     rgba(241, 145, 66, 1) 19%,
@@ -24,8 +88,7 @@ aside h4 {
   padding: 10px;
 }
 
-#contacts h4,
-section fieldset legend h4 {
+.gradient-bw {
   background: linear-gradient(
     90deg,
     rgba(107, 122, 143, 1) 31%,
@@ -59,12 +122,6 @@ button {
 a {
   color: #1a1817;
 }
-a:hover {
-  color: white;
-}
-a:visited {
-  color: #261717;
-}
 
 #contacts {
   max-width: 280px;
@@ -72,12 +129,17 @@ a:visited {
 }
 
 fieldset {
-  max-width: 400px;
-}
-input {
   width: 400px;
 }
 
-table thead tr {
-  background-color: #8191a8;
+fieldset legend,
+fieldset input {
+  display: block;
+}
+
+input {
+  width: 50%;
+}
+small a {
+  display: block;
 }
