@@ -22,7 +22,7 @@
         <figcaption>Coworking space in the centre of Lviv</figcaption>
       </figure>
     </header>
-    <nav id="page-navigation">
+    <nav id="page-navigation" class="main-nav">
       <ul>
         <li><a href="#about">About us</a></li>
         <li><a href="#choose-book">Choose and book</a></li>
@@ -30,9 +30,27 @@
         <li><a href="#gallery">Our gallery</a></li>
         <li><a href="#contacts">Contacts</a></li>
       </ul>
+
+      <form action="/submit" method="get">
+        <input
+          class="search"
+          type="text"
+          id="text-search"
+          name="search-bar"
+          placeholder="Search"
+        />
+        <input
+          class="submit"
+          type="submit"
+          name="submit"
+          id="search-submit"
+          value="Search"
+        />
+      </form>
     </nav>
+
     <main id="page-content">
-      <section id="about">
+      <section id="about" class="section-size">
         <h2>About us</h2>
         <p>
           LvivSpaces is a
@@ -49,9 +67,9 @@
           in Lviv is like.
         </p>
       </section>
-      <section id="choose-book">
+      <section id="choose-book" class="section-size">
         <h2>Choose the best option for your needs:</h2>
-        <section id="day-pass">
+        <section id="day-pass" class="options-inline-block">
           <details>
             <summary>Day Pass</summary>
             <p>
@@ -63,7 +81,7 @@
           </details>
         </section>
 
-        <section id="open-space">
+        <section id="open-space" class="options-inline-block">
           <details>
             <summary>Open-space</summary>
             <p>
@@ -75,7 +93,7 @@
           </details>
         </section>
 
-        <section id="private-office">
+        <section id="private-office" class="options-inline-block">
           <details>
             <summary>Private Office</summary>
             <p>
@@ -87,7 +105,7 @@
           </details>
         </section>
 
-        <section id="meeting-rooms">
+        <section id="meeting-rooms" class="options-inline-block">
           <details>
             <summary>Meeting rooms</summary>
             <p>
@@ -101,34 +119,38 @@
           </details>
         </section>
       </section>
-      <section id="why-us">
-        <h2>Advantages of working in our coworking space</h2>
-        <ul>
-          <li>
-            Convenient location: 7 minutes from
-            <strong>the historical center</strong> of Lviv;
-          </li>
-          <li>Opening hours: 7:00 a.m. - 11:00 p.m. (daily);</li>
-          <li>High-speed Internet (WiFi or Ethernet connection);</li>
-          <li><em>Starlink terminals</em> and powerful generators;</li>
-          <li>Printing areas;</li>
-          <li>Parking for bicycle and scooters;</li>
-          <li><em>Unlimited</em> coffee, tea and cookies;</li>
-          <li>A large selection of restaurants near the location.</li>
-        </ul>
-        <h2>Fixed workplace offers</h2>
-        <ul>
-          <li>24/7 access;</li>
-          <li>High-speed Internet (WiFi or Ethernet connection);</li>
-          <li><em>Starlink terminals</em> and powerful generators;</li>
-          <li>Office equipment (printer, scanner, 3d printer);</li>
-          <li>25m<sup>2</sup> meeting rooms;</li>
-          <li>Child-care room;</li>
-          <li>Kitchen and lounge area;</li>
-          <li>Parking for bicycles and scooters;</li>
-        </ul>
+      <section id="why-us" class="section-size">
+        <div class="inline-block">
+          <h2 class="h2-width">Advantages of our coworking space</h2>
+          <ul>
+            <li>
+              Convenient location: 7 minutes from
+              <strong>the historical center</strong> of Lviv;
+            </li>
+            <li>Opening hours: 7:00 a.m. - 11:00 p.m. (daily);</li>
+            <li>High-speed Internet (WiFi or Ethernet connection);</li>
+            <li><em>Starlink terminals</em> and powerful generators;</li>
+            <li>Printing areas;</li>
+            <li>Parking for bicycle and scooters;</li>
+            <li><em>Unlimited</em> coffee, tea and cookies;</li>
+            <li>A large selection of restaurants near the location.</li>
+          </ul>
+        </div>
+        <div class="inline-block">
+          <h2 class="h2-width">Fixed workplace offers</h2>
+          <ul>
+            <li>24/7 access;</li>
+            <li>High-speed Internet (WiFi or Ethernet connection);</li>
+            <li><em>Starlink terminals</em> and powerful generators;</li>
+            <li>Office equipment (printer, scanner, 3d printer);</li>
+            <li>25m<sup>2</sup> meeting rooms;</li>
+            <li>Child-care room;</li>
+            <li>Kitchen and lounge area;</li>
+            <li>Parking for bicycles and scooters;</li>
+          </ul>
+        </div>
       </section>
-      <section id="gallery">
+      <section id="gallery" class="section-size">
         <h2>LvivSpaces gallery</h2>
         <img src="./images/open-space.jpg" alt="Open_space" />
         <img src="./images/private-office.jpg" alt="Private_office" />
@@ -138,93 +160,69 @@
           Your browser does not support it
         </video>
       </section>
-      <section>
-        <h2>Location and contacts</h2>
-        <section id="address">
-          <address>
-            <p>Yaponska St. 16, Lviv</p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.453825482611!2d24.0065665754019!3d49.83392973156411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7932656edf%3A0x28906a9d6740804!2z0YPQuy4g0K_Qv9C-0L3RgdC60LDRjywgMTYsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1706460952934!5m2!1sru!2sua"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </address>
-        </section>
-        <section id="contacts">
-          <h4>Contact us:</h4>
-          <address>
-            <ul>
-              <li>
-                <a href="mailto:example@gmail.com">E-mail: example@gmail.com</a>
-              </li>
-              <li><a href="tel:+380111111111">Phone: 111111111</a></li>
-            </ul>
-          </address>
-        </section>
-        <section>
-          <fieldset>
-            <legend><h4>Leave us a message</h4></legend>
-            <form action="/submit" method="post">
-              <label for="name">Name:</label>
-              <br />
-              <input type="text" id="name" name="name" required />
-              <br />
-              <label for="email">Email:</label>
-              <br />
-              <input type="email" id="email" name="email" required />
-              <br />
-              <label for="your-question">Your Question:</label>
-              <br />
-              <textarea
-                name="question"
-                id="questionarea"
-                cols="55"
-                rows="10"
-              ></textarea>
-              <br />
-              <br />
-              <button type="submit">Submit</button>
-            </form>
-          </fieldset>
-        </section>
+      <section class="section-size">
+        <div class="inline-block">
+          <h4 class="gradient-bw">Location and contacts</h4>
+          <section>
+            <address>
+              <p>Yaponska St. 16, Lviv</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.453825482611!2d24.0065665754019!3d49.83392973156411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7932656edf%3A0x28906a9d6740804!2z0YPQuy4g0K_Qv9C-0L3RgdC60LDRjywgMTYsINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1706460952934!5m2!1sru!2sua"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </address>
+          </section>
+        </div>
+        <div class="inline-block">
+          <section id="contacts" class="section-size">
+            <h4 class="gradient-bw">Contact us:</h4>
+            <address>
+              <ul>
+                <li>
+                  <a href="mailto:example@gmail.com"
+                    >E-mail: example@gmail.com</a
+                  >
+                </li>
+                <li><a href="tel:+380111111111">Phone: 111111111</a></li>
+              </ul>
+            </address>
+          </section>
+          <section>
+            <fieldset>
+              <legend><h4 class="gradient-bw">Leave us a message</h4></legend>
+              <form action="/submit" method="post">
+                <label for="name">Name:</label>
+
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email" required />
+
+                <label for="your-question">Your Question:</label>
+                <textarea
+                  name="question"
+                  id="questionarea"
+                  cols="55"
+                  rows="10"
+                ></textarea>
+                <br />
+                <br />
+                <button type="submit">Submit</button>
+              </form>
+            </fieldset>
+          </section>
+        </div>
       </section>
 
-      <section>
-        <h4>Working hours</h4>
-        <section>
-          <table>
-            <thead>
-              <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>7:00-23:00</td>
-                <td>7:00-23:00</td>
-                <td>7:00-23:00</td>
-                <td>7:00-23:00</td>
-                <td>7:00-23:00</td>
-                <td>7:00-23:00</td>
-                <td>7:00-23:00</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </section>
-      <aside id="aside">
-        <h4>Reviews</h4>
+      <aside id="aside" class="section-size">
+        <h4 class="gradient-yb">Reviews</h4>
         <blockquote cite="https://www.google.com/">
           "I was completely impressed with their professionalism and customer
           service."
@@ -237,20 +235,17 @@
         </blockquote>
       </aside>
     </main>
-    <footer id="page-footer">
+    <footer id="page-footer" class="section-size">
       <section id="footer">
         <small
           ><a href="">Privacy Policy</a>
-          <br />
+
           <a href="">Public Offer Agreement</a>
-          <br />
+
           <a href="">Terms of service</a>
-          <br />
         </small>
         <br />
         <span>LvivSpaces © 2024</span>
-        <br />
-        <small><span>Last updated on 01.02.2024</span></small>
       </section>
     </footer>
   </body>
