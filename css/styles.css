@@ -58,7 +58,10 @@ body {
   display: inline-block;
   width: 49%;
 }
-
+.h2-fullcolour {
+  background-color: rgb(165, 158, 149);
+  padding: 10px;
+}
 .h2-width {
   margin: auto;
   width: 95%;
@@ -67,7 +70,7 @@ body {
 .section-size,
 aside {
   background-color: #dcc7aa;
-  margin: 10px;
+  margin: 30px 10px;
   padding-left: 10px;
   padding-bottom: 5px;
 }
@@ -76,7 +79,7 @@ h1 {
   margin: 20px 0 20px 20px;
 }
 .gradient-yb,
-h2 {
+.h2-gradient {
   background: linear-gradient(
     90deg,
     rgba(241, 145, 66, 1) 19%,
@@ -123,7 +126,6 @@ a {
 #contacts {
   max-width: 280px;
   margin-bottom: -20px;
-  margin-right: auto;
 }
 
 fieldset {
@@ -136,7 +138,7 @@ fieldset input {
 }
 
 input {
-  width: 80%px;
+  width: 50%;
 }
 small a {
   display: block;
